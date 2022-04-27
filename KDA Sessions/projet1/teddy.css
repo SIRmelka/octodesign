@@ -1,0 +1,22 @@
+.container
+{
+  background: blue;
+  padding: 1px;
+  display: grid;
+  grid-template-rows: 1fr 2fr 2fr ;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.container >div
+{
+  background: green;
+  padding: 1em;
+  margin: 10px;
+  border:2px solid red;
+}
+.child-one
+{
+  grid-column-start: 1;
+  grid-column-end:4 ;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
