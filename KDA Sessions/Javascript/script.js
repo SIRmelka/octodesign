@@ -5,7 +5,7 @@ let stateimg = false;
 const pass = "Melka";
 let passuse = "";
 image.addEventListener('click', function(){
- 
+
     stateimg = !stateimg;
    
     image.setAttribute('width','100px')

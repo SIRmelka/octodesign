@@ -1,0 +1,106 @@
+body
+{
+    background: #fffefe;
+    color: #fff;
+    font-family: 'open sans', cursive,sans-serif;
+}
+div
+{
+    border-radius:10px;
+        
+}
+.header
+{
+    background: fixed #fff;
+    color: #303030;
+    padding: 1em;
+}
+.hiden
+{
+    background: fixed #fefeef;
+    color: #303030;
+    padding: 1em;
+    margin-top: 2em;
+    display:none;
+}
+.middle
+{
+    width:100%;
+    background: #fff;
+    display: inline;
+}
+.nav-list
+{
+
+}
+.nav-item
+{
+    font-weight: bold;
+    display: inline;
+    letter-spacing: 2px;
+    margin: 0px 50px 20px 50px;
+}
+.nav-item:hover
+{
+    color: cornflowerblue;
+    cursor: pointer;
+
+}
+.navbar{
+    display: inline;
+    float: right;
+    
+}
+.content{
+    margin: 2em auto;
+    color:#303030;
+    padding: 1em;
+    border-radius: 10px;
+  
+    background: #f3f2f2;
+    overflow: auto;
+    transition: 2.5s;
+   
+}
+.content-sider
+{
+    background: #fff;
+    display:inline-block;
+    border-radius: 10px;
+    display: true;
+    border-left: 3px cornflowerblue solid;
+}
+.left
+{
+    padding: 2em;
+    float: left;
+    width:65%;
+    transition: display ;
+}
+.right
+{
+    padding: 2em;
+    float:right;
+    width:20%
+}
+/*
+ceci est un commentaire
+*/
+.top
+{
+    display: none;
+}
+.download{
+    background: cornflowerblue;
+    color:#fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px;
+    transition: background 0.3s,box-shadow 0.3s;
+}
+.download:hover
+{
+    background: #fff;
+    box-shadow: inset;
+    color:cornflowerblue;
+}
