@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet"/>
+    <title>Contacts</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <h1>Répertoire de contact</h1>
+        </div>
+        <div class="body">
+            <div class="form">
+                <div class="title">
+                    <h1>Formulaire du contact</h1>
+                </div>
+                <div class="form-content">
+                    <form>
+                        <label for="firstname">Prenom</label>
+                        <input type="text" id="firstname" required>
+                        <label for="lastname">Nom</label>
+                        <input type="text" id="lastname" required>
+                        <label for="group">Groupe</label>
+                        <select id="group" required>
+                            <option></option>
+                            <option>Friends</option>
+                            <option>Family</option>
+                            <option>Collegues</option>
+                        </select>
+                        <label for="bio">Bio</label>
+                        <textarea required id="bio"></textarea>
+                        <div class="file-input">
+                            <div class="input">
+                                <input type="file" id="file" name="picture" style="display:none" accept=".jpg,.png,.jpeg"/>
+                                <button type="button" onclick="file.click()">Choisir un fichier</button>
+                            </div>
+                            <div class="picture">
+                                <img src="" id="output">
+                            </div>  
+                        </div>
+                        <input id="id">
+                        <div class="sbmt-btn">
+                            <button type="submit" class="btn-submit">
+                                créer
+                            </button>
+                            <button type="reset" class="btn-cancel">
+                                Réinit
+                            </button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+            <div class="contacts">
+                <div class="title">
+                    <h1>Liste de contact</h1>
+                </div>
+                <div class="contact-list">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
