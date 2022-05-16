@@ -10,6 +10,8 @@ function addcontent()
     ul.append(li)
     main.prepend(ul)
     li.addEventListener("click", )
+    main.id="test"
 }
+
 
 btn.addEventListener("click",()=>addcontent())

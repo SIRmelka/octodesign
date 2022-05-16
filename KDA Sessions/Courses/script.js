@@ -26,6 +26,7 @@ function readImage(file) {
     reader.readAsDataURL(file);
   }); 
 
+
 function addcontent(event)
 {
 
@@ -60,14 +61,15 @@ title2.classList.add("group")
 title2.textContent=group.value
 let content = document.createElement("p")
 content.textContent=bio.value
+let sbmbtn = document.querySelector(".btn-submit")
 
 text.append(title1,title2,content)
 
 let closer = document.createElement("div")
 closer.classList.add("close")
 
-let icon = document.createElement("span")
-icon.classList.add("fa-solid fa-xmark")
+let icon = document.createElement("p")
+icon.textContent="X"
 closer.append(icon)
 
 contact.prepend(img,text,closer)
@@ -85,12 +87,14 @@ text.addEventListener("click",function(){
 
     let allcontact = document.querySelectorAll(".contact-item")
     allcontact.forEach(element => {
-        element.style.opacity=1
+    element.style.opacity=1
+    sbmbtn.textContent="modifier"
+    sbmbtn.style.background="#3d423e"
         
     });
    
     
-    contact.style.opacity=0.078
+    contact.style.opacity=0.2
 
 
      let id = document.getElementById("id")
@@ -113,6 +117,9 @@ text.addEventListener("click",function(){
 
 event.preventDefault()
 form.reset()
+output.src=""
+sbmbtn.textContent="Créer"
+sbmbtn.style.background="#388bde"
 }
 
 let form = document.querySelector("form")

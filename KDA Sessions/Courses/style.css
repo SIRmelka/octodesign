@@ -83,6 +83,7 @@ form button
     border-radius: 6px;
     padding: 1em;
     box-shadow: 2px 5px 8px rgba(0,0,0,0.4);
+    cursor: pointer;
 }
 
 .file-input{
@@ -131,12 +132,24 @@ form button
 .picture{
     margin: 0;
 }
-
+.contact-list
+{
+    box-sizing: border-box;
+}
 .contact-list img
 {
     width:100px;
     border-radius:100%;
     object-fit: contain;
+    
+}
+.close:hover
+{
+    cursor:pointer
+}
+.info
+{
+    cursor:pointer
 }
 .info
 {
@@ -187,9 +200,10 @@ form button
     .contact-list
     {
         box-sizing: border-box;
+      
     }
     .contact-item
     {
-        width: 95%;
+        /* width: 95%; */
     }
 }
